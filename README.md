@@ -22,7 +22,7 @@ You need to install the following mods to be able to add custom sounds:
 - CustomSounds by Clementinise (<https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/>)
 
 If you're using r2modman or the Thunderstore manager, your basic setup should look like this:
-![Image of r2modman setup](Images\r2modman_setup.png)
+![Image of r2modman setup](Images/r2modman_setup.png)
 
 ## Step 2: Finding the audio files 
 If you want to replace an audio file, you need to know which sound you're actually replacing. For the sake of the guide, I'm going to try and find the audio files for the "Icecream Truck" music whenever the delivery ship lands, but you can apply this process to any sound you'd like to replace.
@@ -33,7 +33,7 @@ To find the sound file you want to replace, I personally recommend extracting al
 For this guide, I will be using AssetRipper (0.3.4.0). First, open up AssetRipper and select the Audio Export Format as "Covert to WAV", as the audio mods we're using can only handle .wav files. Afterwards, on the top toolbar go to File > Open Folder, and select "Lethal Company_Data", which you can find in the directory where Lethal Company is installed (if you don't know where your game is installed, just go to Steam, right click on Lethal Company, and then go to Manage > Browse Local Files).
 
 If everything worked correctly, you should be seeing this window:
-![Image of Assetripper](Images\AssetRipper.png)
+![Image of Assetripper](Images/AssetRipper.png)
 
 Now, to extract ALL the audio files from the game, you need to find an AudioClip file in one of the sharedassets folders. For example, if you click on the arrow next to sharedassets0 and then the one next to AudioClip you should be able to see the files BootUp, ButtonPress1 and HoverButton1. Now, click on any one of these files so that it's selected, and at the top click on Export > Export All Files of Selected Type. Afterwards, select where you would like to save the audio files and click Select Folder. At the time of writing this guide, there should be exactly 700 audio files that you can export.
 
@@ -89,7 +89,7 @@ Go to settings>Browse profile folder, and then go into BepInEx\plugins\Clementin
 
 ## Step 4: Testing the replacement:
 If you did everything correctly, you should see the files loading in the BepInEx console. Alternatively, you can just go into your ship and type "customsounds help" in your terminal to see all the available commands. If your replacement sounds have loaded correctly, then you should be able to see them if you type in "customsounds list" like this:
-![Image of terminal using the CustomSounds command](Images\CustomSounds_console.png)
+![Image of terminal using the CustomSounds command](Images/CustomSounds_console.png)
 
 Here's a little fun demo of how this particular setup looks like:
 [![Watch the video](https://img.youtube.com/vi/mk8O8qFcMlk/maxresdefault.jpg)](https://youtu.be/mk8O8qFcMlk)
@@ -136,7 +136,7 @@ For the CHANGELOG.md, it's the same story as README.md, however, this file is op
 The icon.png is a 256x256 image which will be the icon displayed on your mod page.
 
 If you set everything up correctly, you can now put the entire folder structure into a .zip file, which should look something like this if you open it:
-![Picture of 7zip folder structure](Images\mod_zip.png)
+![Picture of 7zip folder structure](Images/mod_zip.png)
 
 Now you can actually upload the mod to Thunderstore (<thunderstore.io/c/lethal-company/>). First, log in, and then go to Upload at the top of the page. Afterwards, you just upload the .zip file, select your team (you might need to create one first), select the categories and press Submit.
 
