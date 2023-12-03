@@ -144,4 +144,4 @@ Congratulations, your mod is now available to the public! After a while, you sho
 
 ## Step 6, you're done!
 
-**If you have any questions then feel free to ping me over on the Lethal Company Discord over at (https://discord.gg/lethal-company) or just DM me on Discord (nickname: futuresavior), and don't forget to have fun :)**
+**If you have any questions then feel free to ping me over on the Lethal Company Discord over at https://discord.gg/lethal-company or just DM me on Discord (nickname: futuresavior), and don't forget to have fun :)**
