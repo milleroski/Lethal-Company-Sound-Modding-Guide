@@ -27,7 +27,7 @@ If you're using r2modman or the Thunderstore manager, your basic setup should lo
 ## Step 2: Finding the audio files 
 If you want to replace an audio file, you need to know which sound you're actually replacing. For the sake of the guide, I'm going to try and find the audio files for the "Icecream Truck" music whenever the delivery ship lands, but you can apply this process to any sound you'd like to replace.
 
-## Step 2.1: Extracting the audio files
+### Step 2.1: Extracting the audio files
 To find the sound file you want to replace, I personally recommend extracting all the audio files from the game so you have easy access to them, which makes finding them a lot easier. You can do this by using a program called AssetRipper (<https://github.com/AssetRipper/AssetRipper/releases>) or alternatively AssetStudio (<https://github.com/zhangjiequan/AssetStudio/releases>). Make sure to use the latest version (NOT the pre-release one).
 
 For this guide, I will be using AssetRipper (0.3.4.0). First, open up AssetRipper and select the Audio Export Format as "Covert to WAV", as the audio mods we're using can only handle .wav files. Afterwards, on the top toolbar go to File > Open Folder, and select "Lethal Company_Data", which you can find in the directory where Lethal Company is installed (if you don't know where your game is installed, just go to Steam, right click on Lethal Company, and then go to Manage > Browse Local Files).
@@ -43,7 +43,7 @@ You can usually find the files just by looking at the audio names, they have pre
 
 However, if you REALLY can't find the sound file you're looking for, then **Step 2.2** is for you. Otherwise, you can go directly to **Step 3**.
 
-## Step 2.2 (only if you didn't find the file): Using LCSoundTool
+### Step 2.2 (only if you didn't find the file): Using LCSoundTool
 
 If you can't find the sound you're replacing by just looking at the extracted audio files, then you can use method this to find out the exact name of the sound file.
 
@@ -87,27 +87,20 @@ Go to settings>Browse profile folder, and then go into BepInEx\plugins\Clementin
 
 **Note:** r2modman WILL delete your custom sound files each time you update CustomSounds, so I would recommend to keep your replacement sounds in another folder so you can quickly swap them back in the case an update comes out.
 
-**Random sound feature:**
+### Random sound feature and descriptions
 
-CustomSounds has added a few new features with Update 2.1.0. The first one allows you to use multiple files to replace one sound effect, and then to set a random % chance for each of these replacements to play. So, for example, you can replace the JackOLanternHit sound with two sound files by doing the following:
-```
-For example, with 2 files named JackOLanternHit-25.wav and JackOLanternHit-75.wav, there will be 2 possible sounds for one AudioClip with respectively 25% and 75% chances of playing
-```
+CustomSounds has added a few features with Update 2.1.0. This is a rewrite of the CHANGELOG taken from Thunderstore (https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/):
 
-Additionally, you can now add short descriptions to sounds that show up in the terminal when you type in "customsounds list":
+You can now use multiple files to replace one sound effect, and then set a random % chance for each of these replacement sounds to play. So, for example, you can replace the JackOLanternHit sound with two sound files, change their names into JackOLanternHit-25.wav and JackOLanternHit-75.wav, and they will respectively have a 25% and a 75% chance of playing that particular sound.
 
-```
-You can now also give names to audio clips to better describe what sound they are replacing (For example, JackOLanternHit-Funny-Laugh.wav will display as "JackOLanternHit [Funny Laugh]" in the terminal)
-```
-
-Both citations were taken directly from the CustomSounds README (https://thunderstore.io/c/lethal-company/p/Clementinise/CustomSounds/)
+Additionally, you can now add short descriptions to sounds that show up in the terminal when you type in "customsounds list". For instance, if you want to add a description to the JackOLanternHit.wav sound file, you would just name it JackOLanternHit-Funny-Laugh.wav, and it will display as "JackOLanternHit [Funny Laugh]" in the terminal.
 
 ## Step 4: Testing the replacement:
 If you did everything correctly, you should see the files loading in the BepInEx console. Alternatively, you can just go into your ship and type "customsounds help" in your terminal to see all the available commands. If your replacement sounds have loaded correctly, then you should be able to see them if you type in "customsounds list" like this:
 ![Image of terminal using the CustomSounds command](Images/CustomSounds_console.png)
 
 Here's a little fun demo of how this particular setup looks like:
-[![Watch the video](https://img.youtube.com/vi/mk8O8qFcMlk/maxresdefault.jpg)](https://youtu.be/mk8O8qFcMlk)
+[![Watch the video](Images/Youtube_thumbnail.png)](https://youtu.be/mk8O8qFcMlk)
 
 ## Step 5: Sharing custom sounds with friends
 
@@ -116,18 +109,18 @@ There are three methods to share your custom audio files:
 - CustomSounds syncing feature
 - Uploading it to Thunderstore
 
-## Step 5.1: File sharing
+### Step 5.1: File sharing
 
 The first one is by far the most obvious and simple method, you just put the audio files into a .zip file, upload it somewhere, tell your friends to download it and put it into the CustomSounds folder, and that's it.
 
-## Step 5.2: Customsounds syncing feature (NEW!)
+### Step 5.2: Customsounds syncing feature (NEW!)
 
 The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
 ![Image of Sync request](Images/Sync_request_client.png)
 
 Once the clients press F8, the host will send all the custom sounds to all clients, and they will be immediately loaded by the clients once the download is complete. In the case that someone doesn't want to use your custom sounds, they can use "customsounds revert" to use the original game files instead.
 
-## Step 5.3: Uploading to Thunderstore
+### Step 5.3: Uploading to Thunderstore
 
 The third one is more complicated to set up, but has the benefit of putting it up on Thunderstore, so your friends (and everyone else) can just download it as a package without needing to interact with any files at all.
 
@@ -173,7 +166,6 @@ Congratulations, your mod is now available to the public! After a while, you sho
 
 ## Step 6, you're done!
 
-**If you have any questions then feel free to ping me over on the Lethal Company Discord over at https://discord.gg/lethal-company or just DM me on Discord (nickname: futuresavior). Please do NOT send me friend requests on Discord, just DM me directly, and don't forget to have fun :)**
+If you have any questions then feel free to ping me over on the Lethal Company Discord over at https://discord.gg/lethal-company or just DM me on Discord (nickname: futuresavior). Please do NOT send me friend requests on Discord, just DM me directly, and don't forget to have fun :)
 
-## Credits
 Thank you to Clementinise for creating CustomSounds and proof-reading my guide, and to no00ob for creating LCSoundTool, both of your mods are amazing and appreciated \<3
