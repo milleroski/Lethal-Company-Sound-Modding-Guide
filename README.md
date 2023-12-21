@@ -51,7 +51,7 @@ Afterwards, select where you would like to save the audio files and click Select
 
 Afterwards, go to the directory you exported the audio files to, and go to `Lethal Company\ExportedProject\Assets\AudioClip`, and there, you should be able to see all the audio files that are currently in the game! Feel free to copy these files somewhere else or to delete the `.meta` files.
 
-You can usually find the files just by looking at the audio names, they have pretty logical names. For example, the ship "ice cream truck music" is literally called `"IcecreamTruckV2"` and `"IcecreamTruckFar"`. 
+You can usually find the files just by looking at the audio names, they have pretty logical names. For example, the ship "ice cream truck music" is literally called `IcecreamTruckV2` and `IcecreamTruckFar`. 
 
 However, if you REALLY can't find the sound file you're looking for, then **Step 2.2** is for you. Otherwise, you can go directly to **Step 3**.
 
@@ -175,7 +175,7 @@ The icon.png is a 256x256 image which will be the icon displayed on your mod pag
 If you set everything up correctly, you can now put the entire folder structure into a .zip file, which should look something like this if you open it:
 ![Picture of 7zip folder structure](Images/mod_zip.png)
 
-Now you can actually upload the mod to Thunderstore (<thunderstore.io/c/lethal-company/>). First, log in, and then go to Upload at the top of the page. Afterwards, you just upload the .zip file, select your team (you might need to create one first), select the categories and press Submit.
+Now you can actually upload the mod to [Thunderstore](thunderstore.io/c/lethal-company/). First, log in, and then go to Upload at the top of the page. Afterwards, you just upload the .zip file, select your team (you might need to create one first), select the categories and press Submit.
 
 Congratulations, your mod is now available to the public! After a while, you should be able to download the mod through Thunderstore / r2modman, meaning that your friends can quickly install the audio mod without them needing to do any work.
 
