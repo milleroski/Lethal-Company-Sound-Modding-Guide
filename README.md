@@ -175,7 +175,7 @@ The icon.png is a 256x256 image which will be the icon displayed on your mod pag
 If you set everything up correctly, you can now put the entire folder structure into a .zip file, which should look something like this if you open it:
 ![Picture of 7zip folder structure](Images/mod_zip.png)
 
-Now you can actually upload the mod to [Thunderstore](thunderstore.io/c/lethal-company/). First, log in, and then go to Upload at the top of the page. Afterwards, you just upload the .zip file, select your team (you might need to create one first), select the categories and press Submit.
+Now you can actually upload the mod to [Thunderstore](https://thunderstore.io/c/lethal-company/). First, log in, and then go to Upload at the top of the page. Afterwards, you just upload the .zip file, select your team (you might need to create one first), select the categories and press Submit.
 
 Congratulations, your mod is now available to the public! After a while, you should be able to download the mod through Thunderstore / r2modman, meaning that your friends can quickly install the audio mod without them needing to do any work.
 
