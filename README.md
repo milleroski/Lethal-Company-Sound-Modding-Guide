@@ -179,8 +179,22 @@ Now you can actually upload the mod to [Thunderstore](https://thunderstore.io/c/
 
 Congratulations, your mod is now available to the public! After a while, you should be able to download the mod through Thunderstore / r2modman, meaning that your friends can quickly install the audio mod without them needing to do any work.
 
-## Step 6, you're done!
+## FAQ
+### I converted the files to .wav through the windows file explorer, and it doesn't work. Why?
 
-If you have any questions then feel free to ping me over on the [Lethal Company Discord](https://discord.gg/lethal-company), or just DM me on Discord (nickname: `futuresavior`). Please do NOT send me friend requests on Discord, just DM me directly, and don't forget to have fun \:)
+You can't just rename a .mp3 file to a .wav file and expect it to work. Sound files with different extensions store data differently. Windows does NOT convert the actual data inside of the sound files, it just changes the NAME of the extension, meaning that it's basically just a .mp3 file that appears as a .wav file, but isn't. Use a proper audio file converter instead -- there's a lot of options online. You can use Audacity, ffmpeg, or just any online file converter.
 
+### I can't upload my mod to Thunderstore, why?
+Check for the obvious things, did you name the files correctly? Is it called manifest.json instead of manifest.json.json? Is your folder path for the CustomSounds correct? Is your manifest.json correct?
+
+### My sound mod isn't working even though the sounds appear on the list!
+Make sure that you have replaced the correct audio file. A lot of people have reported to me that their sound mod "doesn't work", while in reality it works perfectly fine, but it's just not the sound that they expected to replace. A common example is the light switch in the ship, where the actual sound files are called ```FlashlightClickMini``` and ```FlashlightClickMini2```, and NOT ```LightOff``` and ```LightOn```, which are actually responsible for the breaker panel in the dungeon.
+
+### My sounds don't work after I reload them in the terminal!
+This is a known bug, I've reported this to the developer already. Just don't use the reload command for now.
+
+### None of these questions solve my problem! How can I contact you?
+If you have any other questions then feel free to ping me over on the [Lethal Company Discord](https://discord.gg/lethal-company), or just DM me on Discord (nickname: `futuresavior`). I want to clarify that I am not the developer of CustomSounds, that's Clementinise, who you can also contact on the same discord. Please do NOT send me friend requests, just DM me directly, and don't forget to have fun \:)
+
+## Credits
 Thank you to Clementinise for creating CustomSounds and proof-reading my guide, and to no00ob for creating LCSoundTool, both of your mods are amazing and appreciated \<3
