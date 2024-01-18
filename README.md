@@ -9,7 +9,7 @@ I've seen a lot of people lately asking about custom audio modding and getting s
 2. Find the name of the sound file you want to replace by using AssetRipper and/or LCSoundTool
 3. Rename your custom sound to the name of the one you're replacing and convert it to .wav
 4. Put the custom sounds in CustomSounds folder which you can find wherever you installed BepInEx.
-5. Share the audio files with your friends, or sync them through Customsounds' sync feature, or upload the audio files as a mod on Thunderstore
+5. Share the audio files with your friends, or upload the audio files as a mod on Thunderstore
 6. You're done \:)
 
 ## Long guide
@@ -121,23 +121,15 @@ Here's a little fun demo of how this particular setup looks like:
 
 There are three methods to share your custom audio files:
 - File sharing
-- CustomSounds syncing feature
 - Uploading it to Thunderstore
 
 ### Step 5.1: File sharing
 
 The first one is by far the most obvious and simple method, you just put the audio files into a `.zip` file, upload it somewhere, tell your friends to download it and put it into the CustomSounds folder, and that's it.
 
-### Step 5.2: Customsounds syncing feature (NEW!)
+### Step 5.2: Uploading to Thunderstore
 
-The second one uses a new experimental feature of CustomSounds, which allows your friends to synchronize their custom sounds with yours. As before, you can type in "customsounds help" to see all the available commands. The command of interest to you is the "customsounds sync" command. Once you type in this command, everyone in your lobby should get this prompt:
-![Image of Sync request](Images/Sync_request_client.png)
-
-Once the clients press F8, the host will send all the custom sounds to all clients, and they will be immediately loaded by the clients once the download is complete. In the case that someone doesn't want to use your custom sounds, they can use "customsounds revert" to use the original game files instead.
-
-### Step 5.3: Uploading to Thunderstore
-
-The third one is more complicated to set up, but has the benefit of putting it up on Thunderstore, so your friends (and everyone else) can just download it as a package without needing to interact with any files at all.
+The method is more complicated to set up, but has the benefit of putting it up on Thunderstore, so your friends (and everyone else) can just download it as a package without needing to interact with any files at all.
 
 First of all, you need to set up the following folder structure for your sound files:
 ```
