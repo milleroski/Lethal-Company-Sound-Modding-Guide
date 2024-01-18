@@ -35,7 +35,7 @@ To find the sound file you want to replace, I personally recommend extracting al
 
 You can do this by using a program called [AssetRipper](https://github.com/AssetRipper/AssetRipper/releases). Make sure to use the latest version (NOT the pre-release one).
 
-First, open up AssetRipper and select the Audio Export Format as "Convert to WAV", as the audio mods we're using can only handle .wav files. 
+First, open up AssetRipper, before update 2.3, you needed to set the audio export format to .wav, but you don't need to do that anymore, as CustomSounds now supports .ogg, .mp3 and .wav files. 
 
 Afterwards, on the top toolbar go to `File > Open Folder`, and select "Lethal Company_Data", which you can find in the directory where Lethal Company is installed (if you don't know where your game is installed, just go to Steam, right click on Lethal Company, and then go to `Manage > Browse Local Files`).
 
@@ -87,7 +87,14 @@ So now we know that we need to replace the sound files `IcecreamTruckFar` and `I
 ## Step 3: Replacing the audio files
 So, now we know that the files we're looking for are `IcecreamTruckFar` and `IcecreamTruckV2`. How do you replace them?
 
-First, you need to rename whatever audio file you're going to use to replace the original one, and (if it isn't already) change the audio format to `.wav`. So if you have a file called `IcecreamMusic.mp3`, then you need to rename it to `IcecreamTruckV2` and convert it to `.wav`.
+First, make sure to change the config in BepInEx.cfg. In particular, set the following parameter to true:
+```
+[Chainloader] HideManagerGameObject = true
+```
+
+CustomSounds will NOT work if you don't set this paremeter.
+
+Second, you need to rename whatever audio file you're going to use to replace the original one, and (if it isn't already) convert the audio format. So if you have a file called `IcecreamMusic.mp3`, then you need to rename it to `IcecreamTruckV2` and convert it to `.wav`,`.mp3` or `.ogg`.
 
 Once you're done with that, you need to place the audio files in the folder where CustomSounds is installed.
 
@@ -172,7 +179,7 @@ Now you can actually upload the mod to [Thunderstore](https://thunderstore.io/c/
 Congratulations, your mod is now available to the public! After a while, you should be able to download the mod through Thunderstore / r2modman, meaning that your friends can quickly install the audio mod without them needing to do any work.
 
 ## FAQ
-### I converted the files to .wav through the windows file explorer, and it doesn't work. Why?
+### I converted the files to .wav, .mp3 or .ogg through the windows file explorer, and it doesn't work. Why?
 
 You can't just rename a .mp3 file to a .wav file and expect it to work. Sound files with different extensions store data differently. Windows does NOT convert the actual data inside of the sound files, it just changes the NAME of the extension, meaning that it's basically just a .mp3 file that appears as a .wav file, but isn't. Use a proper audio file converter instead -- there's a lot of options online. You can use Audacity, ffmpeg, or just any online file converter.
 
